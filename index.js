@@ -24,5 +24,8 @@ Orders.forEach(order =>{
                     "<td>"+ order.productNumber +"</td>"+
                     "<td>"+ order.paymentStatus +"</td>"+
                     "<td class='warning'>"+ order.shipping +"</td>"+
-                    "<td class='primary'>Details</td>"
+                    "<td class='primary'>Details</td>";
+    tr.innerHTML = trContent;
+    document.querySelector('table tbody').appendChild(tr)
+
 })
